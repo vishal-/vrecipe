@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "vrecipe",
   "main": "src/index.ts",
-  "compatibility_date": "2026-06-09"
+  "compatibility_date": "2026-06-09",
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -21,13 +21,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vrecipe_dev",
+      "database_id": "74fa8457-1d4a-4302-8101-b116817562a2"
+    }
+  ]
   // "ai": {
   //   "binding": "AI"
   // },
