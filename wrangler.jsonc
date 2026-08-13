@@ -6,8 +6,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "vrecipe-db",
-      "database_id": "vrecipe-d1-local-id"
+      "database_name": "vrecipe",
+      "database_id": "93cba6e3-ffa1-4f16-8122-93ddacf521b1"
     }
   ]
 }
