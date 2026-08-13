@@ -9,10 +9,14 @@
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
+    "@tanstack/table-core": "^9.1.2",
     "hono": "^4.13.2"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.44.0",
+    "@hono/vite-dev-server": "^0.26.1",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2",
     "vite": "^8.1.4",
     "vite-ssr-components": "^0.6.1",
     "wrangler": "^4.110.0"
