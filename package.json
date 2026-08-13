@@ -2,18 +2,23 @@
   "name": "vrecipe",
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "$npm_execpath run build && vite preview",
+    "deploy": "$npm_execpath run build && wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
-    "drizzle-kit": "^0.31.10",
-    "drizzle-orm": "^0.45.2",
-    "hono": "^4.12.25",
-    "uuid": "^14.0.0"
+    "@tanstack/table-core": "^9.1.2",
+    "hono": "^4.13.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260609.1",
-    "wrangler": "^4.4.0"
+    "@cloudflare/vite-plugin": "^1.44.0",
+    "@hono/vite-dev-server": "^0.26.1",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.4",
+    "vite-ssr-components": "^0.6.1",
+    "wrangler": "^4.110.0"
   }
 }
